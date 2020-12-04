@@ -1,6 +1,6 @@
 //START-OF-SCRIPT
 node {
-    def server = Artifactory.server 'artifactory'
+    def server = Artifactory.server 'Artifactory Server 7.11.5'
     
     withCredentials([usernamePassword(credentialsId: 'artifactory',
                      usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
